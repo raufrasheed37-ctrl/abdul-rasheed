@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rauf Rasheed — Frontend Developer</title>
+  <meta name="description" content="Portfolio of Rauf Rasheed — frontend developer (HTML, CSS, JS)." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="logo">Rauf Rasheed</div>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌗</button>
+        <button id="menu-toggle" class="menu-btn" aria-label="Open menu">☰</button>
+      </nav>
+    </div>
+
+    <!-- Mobile menu (same links) -->
+    <div id="mobile-menu" class="mobile-menu">
+      <ul>
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero" data-aos="fade-up">
+      <div class="hero-inner">
+        <h1>Hey, I'm <span class="accent">Rauf Rasheed</span></h1>
+        <p class="sub">Frontend Developer — HTML • CSS • JavaScript</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" data-aos="fade-in">
+      <div class="section-inner">
+        <h2>About Me</h2>
+        <p class="lead">
+          I build modern, responsive web experiences. I’m passionate about clean UI, strong UX and fast performant sites.
+          I’ve worked on DE-Mart (e-commerce) and an Afrobeats streaming platform. I love learning new tools and sharing what I learn.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Tailwind CSS</div>
+          <div class="skill">Git & GitHub</div>
+          <div class="skill">VS Code</div>
+          <div class="skill">Figma</div>
+          <div class="skill">Netlify / Vercel</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <img src="https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg" alt="DE-Mart screenshot" class="project-thumb" />
+            <div class="project-body">
+              <h3>DE-Mart</h3>
+              <p class="muted">E-commerce platform for Nigerian businesses — mobile-first, fast checkout.</p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" class="link">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener" class="link">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+
+          <article class="project-card">
+            <img src="https://images.pexels.com/photos/5077060/pexels-photo-5077060.jpeg" alt="Afrobeats screenshot" class="project-thumb" />
+            <div class="project-body">
+              <h3>Afrobeats Music</h3>
+              <p class="muted">A streaming UI for Afrobeats artists and curated playlists.</p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener" class="link">Live Demo</a>
+                <a href="#" target="_blank" rel="noopener" class="link">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more project-card blocks as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2>Testimonials</h2>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p>“Rauf delivered high-quality code ahead of schedule.”</p>
+            <footer>— Client</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>“His Afrobeats project helped expand my reach.”</p>
+            <footer>— Artist</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG (placeholder) -->
+    <section id="blog" class="section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2>Blog</h2>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <img src="img/blog1.jpg" alt="blog thumbnail" />
+            <h3>How I built DE-Mart</h3>
+            <p class="muted">A short walkthrough of tech choices and lessons learned.</p>
+            <a href="#" class="link">Read</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2>Contact</h2>
+        <p class="lead">Want to work together? Send a message.</p>
+
+        <!-- Replace action URL with your Formspree / EmailJS endpoint -->
+        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+          <div class="form-grid">
+            <input name="name" type="text" placeholder="Your name" required />
+            <input name="email" type="email" placeholder="Your email" required />
+            <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="section-inner">
+      <p>© <span id="year"></span> Rauf Rasheed — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
