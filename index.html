@@ -1,199 +1,237 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rauf Rasheed — Frontend Developer</title>
-  <meta name="description" content="Portfolio of Rauf Rasheed — frontend developer (HTML, CSS, JS)." />
-  <link rel="stylesheet" href="style.css" />
-  <!-- AOS for scroll animations -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Raufu AbdulRasheed</title>
 </head>
 <body>
-  <!-- Loader -->
-  <div id="loader">
-    <div class="spinner"></div>
+  <header class="Navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <h2 class="logo">Raufu AbdulRasheed</h2>
+    </div>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- ONLY VISIBLE ON MOBILE -->
+      <div class="menu-btn" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </div>
 
+  <!-- Mobile Drop Down Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-  <!-- NAV -->
-  <header class="site-header">
-    <div class="nav-inner">
-      <div class="logo">Rauf Rasheed</div>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h4>Hello.</h4>
+      <h1>I'm  <span>Raufu AbdulRasheed</span></h1>
+      <h2>Software Developer</h2>
 
-      <nav>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Get a project?</a>
+        <a href="CV/raufrasheed-cv.pdf" class="btn-outline">My Resume</a>
+      </div>
+      </div>
 
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌗</button>
-        <button id="menu-toggle" class="menu-btn" aria-label="Open menu">☰</button>
-      </nav>
-    </div>
+        <div class="hero-image">
+          <img src="img/rauf.png" alt="Raufu AbdulRasheed">
+        </div>
+</section>
 
-    <!-- Mobile menu (same links) -->
-    <div id="mobile-menu" class="mobile-menu">
+   <section class="skills-bar" id="skills">
       <ul>
-        <li><a href="#home" class="mobile-link">Home</a></li>
-        <li><a href="#about" class="mobile-link">About</a></li>
-        <li><a href="#skills" class="mobile-link">Skills</a></li>
-        <li><a href="#projects" class="mobile-link">Projects</a></li>
-        <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
-        <li><a href="#contact" class="mobile-link">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+         <li>HTML5</li>
+         <li>CSS</li>
+         <li>JavaScript</li>
+         <li>React</li>
+         <li>Node.js</li>
+         <li>Git</li>
+         <li>Github</li>
+       </ul>
+   </section>
 
-  <!-- HERO -->
-  <main>
-    <section id="home" class="hero" data-aos="fade-up">
-      <div class="hero-inner">
-
-        <h1>Hey, I'm <span class="accent">Rauf Rasheed</span></h1>
-        
-        <p class="sub">Frontend Developer — HTML • CSS • JavaScript</p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn outline" href="resume.pdf" download>Download Resume</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section" data-aos="fade-in">
-      <div class="section-inner">
-        <h2>About Me</h2>
-        <p class="lead">
-          I build modern, responsive web experiences. I’m passionate about clean UI, strong UX and fast performant sites.
-          I’ve worked on DE-Mart (e-commerce) and an Afrobeats streaming platform. I love learning new tools and sharing what I learn.
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section" data-aos="fade-up">
-      <div class="section-inner">
-        <h2>Skills & Tools</h2>
-        <div class="skills-grid">
-          <div class="skill">HTML5</div>
-          <div class="skill">CSS3</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">Tailwind CSS</div>
-          <div class="skill">Git & GitHub</div>
-          <div class="skill">VS Code</div>
-          <div class="skill">Figma</div>
-          <div class="skill">Netlify / Vercel</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section" data-aos="fade-up">
-      <div class="section-inner">
-        <h2>Selected Projects</h2>
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <article class="project-card">
-            <img src="https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg" alt="DE-Mart screenshot" class="project-thumb" />
-            <div class="project-body">
-              <h3>DE-Mart</h3>
-              <p class="muted">E-commerce platform for Nigerian businesses — mobile-first, fast checkout.</p>
-              <div class="project-links">
-                <a href="#" target="_blank" rel="noopener" class="link">Live Demo</a>
-                <a href="#" target="_blank" rel="noopener" class="link">Source</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-
-          <article class="project-card">
-            <img src="https://images.pexels.com/photos/5077060/pexels-photo-5077060.jpeg" alt="Afrobeats screenshot" class="project-thumb" />
-            <div class="project-body">
-              <h3>Afrobeats Music</h3>
-              <p class="muted">A streaming UI for Afrobeats artists and curated playlists.</p>
-              <div class="project-links">
-                <a href="#" target="_blank" rel="noopener" class="link">Live Demo</a>
-                <a href="#" target="_blank" rel="noopener" class="link">Source</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Add more project-card blocks as needed -->
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="section" data-aos="fade-up">
-      <div class="section-inner">
-        <h2>Testimonials</h2>
-        <div class="testimonials-grid">
-          <blockquote class="testimonial">
-            <p>“Rauf delivered high-quality code ahead of schedule.”</p>
-            <footer>— Client</footer>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>“His Afrobeats project helped expand my reach.”</p>
-            <footer>— Artist</footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- BLOG (placeholder) -->
-    <section id="blog" class="section" data-aos="fade-up">
-      <div class="section-inner">
-        <h2>Blog</h2>
-        <div class="blog-grid">
-          <article class="blog-card">
-            <img src="img/blog1.jpg" alt="blog thumbnail" />
-            <h3>How I built DE-Mart</h3>
-            <p class="muted">A short walkthrough of tech choices and lessons learned.</p>
-            <a href="#" class="link">Read</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section" data-aos="fade-up">
-      <div class="section-inner">
-        <h2>Contact</h2>
-        <p class="lead">Want to work together? Send a message.</p>
-
-        <!-- Replace action URL with your Formspree / EmailJS endpoint -->
-        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-          <div class="form-grid">
-            <input name="name" type="text" placeholder="Your name" required />
-            <input name="email" type="email" placeholder="Your email" required />
-            <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+     <section class="about-section" id="about"> 
+       <div class="about-container">
+        <div class="about-services">
+          <div class="service-card">
+              <h3>Web Development</h3>
+              <p>I build functional and responsive websites.</p>
           </div>
-          <button type="submit" class="btn primary">Send Message</button>
-        </form>
+          
+          <div class="service-card">
+            <h3>App Interfaces</h3>
+            <p>Interfaces for mobile and web apps.</p>
+          </div>
+        </div>
+            
+         <div class="about-text">
+         <h2>About Me</h2>
+         <p>My name is <strong>Raufu AbdulRasheed</strong>. I am a passionate<strong>Software Developer</strong>
+          with expertise in building web applications and user interfaces. I love creating efficient and scalable solutions that meet user needs.
+        </p>
 
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>2+</h3>
+            <p>Years of Experience</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>120+</h3>
+            <p>Projects Completed</p>
+          </div>
+
+          <div class="stat-card">
+            <h3>95%</h3>
+            <p>Satisfied Clients</p>
+          </div>
+
+         </div>
+
+       </div>
+     </section>
+
+   <section id="projects" class="projects-section">
+
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>Short description about this project. What you built, features, etc.</p>
+      <div class="project-links">
+        <a href="">Live Demo</a>
+        <a href="#">Source Code</a>
       </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="section-inner">
-      <p>© <span id="year"></span> Rauf Rasheed — Built with ❤️</p>
     </div>
-  </footer>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
-  <script>
-    AOS.init({ duration: 700, once: true });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>Short description about this project. What you built, features, etc.</p>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Project Three</h3>
+      <p>Short description about this project. What you built, features, etc.</p>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </div>
+
+  </div>
+
+</section> 
+     
+
+<section id="contact" class="contact-section">
+
+  <h2 class="section-title">Get In Touch</h2>
+
+  <div class="contact-wrapper">
+
+    <!-- LEFT SIDE — FORM -->
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+
+    <!-- RIGHT SIDE — INFO -->
+    <div class="contact-info">
+      <h3>Let’s talk.</h3>
+      <p>I’m open to freelance projects, collaborations, or job opportunities.</p>
+
+      <div class="info-box">
+        <p><strong>Email:</strong> raufrasheed37@gmail.com</p>
+      </div>
+
+      <div class="info-box">
+        <p><strong>Location:</strong> Ibadan, Nigeria</p>
+      </div>
+
+      <div class="info-box">
+        <p><strong>Available for:</strong> Remote & On-site roles</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Left -->
+    <div class="footer-info">
+      <h3 class="footer-logo">Raufu Abdulrasheed</h3>
+      <p class="footer-text">Software Developer</p>
+    </div>
+
+    <!-- Middle -->
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Right -->
+    <div class="footer-socials">
+      <a href="https://github.com/raufrasheed37-ctr"  target="_blank"> <i class="fa-brands fa-github"></i></a>
+      <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://x.com/raufrasheed35?t=deBvFUCHJM2jal4iyrL1jw&s=09"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 — Raufu Abdulrasheed. All rights reserved.</p>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
