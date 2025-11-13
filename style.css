@@ -190,7 +190,7 @@ h1, h2, h3 {
   align-items: flex-start;
 }
 
-/* LEFT SIDE (cards) */
+
 .about-services {
   flex: 1;
   display: flex;
@@ -198,7 +198,7 @@ h1, h2, h3 {
   gap: 20px;
 }
 
-/* single card */
+
 .service-card {
   background: var(--section-bg);
   padding: 20px;
@@ -206,7 +206,7 @@ h1, h2, h3 {
   box-shadow: var(--shadow);
 }
 
-/* RIGHT SIDE (text) */
+
 .about-text {
   flex: 2;
 }
@@ -221,7 +221,7 @@ h1, h2, h3 {
   line-height: 1.6;
 }
 
-/* stats under text */
+
 .about-stats {
   margin-top: 30px;
   display: flex;
@@ -411,8 +411,8 @@ h1, h2, h3 {
 .footer {
   background: var(--section-bg);
   padding: 40px 0;
-  margin-top: 80px;
   border-top: 1px solid var(--line);
+  margin: auto;
 }
 
 .footer-container {
@@ -543,18 +543,21 @@ h1, h2, h3 {
   }
 
   .about-stats {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .stat-card {
-    flex: 1 1 250px;
-    max-width: 280px;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px; 
+  box-sizing: border-box;
+}
+   
+   .about-stats .stat-card {
+  width: 100%;
+  max-width: 340px;
+  margin: 12px 0; 
+  text-align: center;
+}
 
   /* PROJECTS */
   .projects-grid {
