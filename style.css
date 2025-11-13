@@ -461,64 +461,10 @@ h1, h2, h3 {
 
 
 @media (max-width: 900px) {
-
- section,
-  .about-section,
-  .projects-section,
-  .contact-section,
-  .footer {
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 0 15px;
-    text-align: center;
-  }
-
-  /* Prevent text from touching edges */
-  p, h1, h2, h3 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Fix project cards layout */
-  .projects-grid,
-  .projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 420px;
-  }
-
-  /* Contact form full width */
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Make sure footer and text align well */
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    text-align: center;
-  }
-
-  /* Prevent overflow on small screens */
-  body {
-    overflow-x: hidden;
-  }
-
- 
-
   /* GENERAL */
   body {
     font-size: 0.95rem;
+    overflow-x: hidden;
   }
 
   .Navbar {
@@ -567,57 +513,57 @@ h1, h2, h3 {
   /* SKILLS BAR */
   .skills-bar ul {
     flex-wrap: wrap;
-    gap: 25px;
-    font-size: 0.9rem;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    
   }
 
   /* ABOUT SECTION */
   .about-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 30px;
   }
 
+  .about-text {
+    max-width: 90%;
+  }
+
   .about-services {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .service-card {
-    flex: 1;
-    min-width: 150px;
-  }
-
-  .about-text h2 {
-    text-align: center;
+    width: 100%;
+    max-width: 350px;
   }
 
   .about-stats {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    justify-content: center;
   }
 
   .stat-card {
-    flex: 1 1 45%;
+    width: 100%;
+    max-width: 280px;
   }
 
   /* PROJECTS */
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
-
-  .projects-section {
+  .project-card{
+    padding: 20px;
     text-align: center;
   }
+
 
   /* CONTACT */
-
-  .contact-section {
-    text-align: center;
-    padding: 40px 18px; 
-    margin: 40px auto; 
-  }
 
   .contact-wrapper {
     flex-direction: column;
@@ -628,7 +574,7 @@ h1, h2, h3 {
   .contact-info,
   .contact-form {
     width: 100%;
-    max-width: 420px;
+    max-width: 400px;
   }
 
   .contact-info {
@@ -637,10 +583,7 @@ h1, h2, h3 {
 
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    font-size: 0.95rem;
   }
 
   .contact-form button {
@@ -650,19 +593,23 @@ h1, h2, h3 {
   /* FOOTER */
   .footer-container {
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     text-align: center;
   }
 
   .footer-links {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
   }
 
   .footer-socials {
-    margin-top: 10px;
+    justify-content: center;
   }
 
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
 
   .nav-links {
     display: none;
