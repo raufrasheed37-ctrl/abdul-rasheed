@@ -543,13 +543,17 @@ h1, h2, h3 {
   }
 
   .about-stats {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    width: 100%;
   }
 
   .stat-card {
-    width: 100%;
+    flex: 1 1 250px;
     max-width: 280px;
+    text-align: center;
   }
 
   /* PROJECTS */
