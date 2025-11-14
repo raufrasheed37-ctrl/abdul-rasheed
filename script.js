@@ -11,8 +11,19 @@ window.addEventListener("scroll", function() {
 const menuBtn = document.querySelector(".menu-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
 const navbar = document.querySelector(".Navbar");
+const menuLinks = document.querySelectorAll(".mobile-menu a");
+
 
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   mobileMenu.classList.toggle("active");
 });
+
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    menuBtn.classList.remove("active");
+  });
+});
+
+
